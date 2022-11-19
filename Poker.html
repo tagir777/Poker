@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ПОКЕР ТАГИР</title>
+        <style>
+            #one {
+            position: absolute; /* РђР±СЃРѕР»СЋС‚РЅРѕРµ РїРѕР·РёС†РёРѕРЅРёСЂРѕРІР°РЅРёРµ */
+            left: 300px; /* РџРѕР»РѕР¶РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РѕС‚ РїСЂР°РІРѕРіРѕ РєСЂР°СЏ */
+            top: 20px; /* РџРѕР»РѕР¶РµРЅРёРµ РѕС‚ РІРµСЂС…РЅРµРіРѕ РєСЂР°СЏ */
+            width: 100px; /* РЁРёСЂРёРЅР° Р±Р»РѕРєР° */
+			height: 150px; 
+            }
+            #two {
+            position: absolute; /* РђР±СЃРѕР»СЋС‚РЅРѕРµ РїРѕР·РёС†РёРѕРЅРёСЂРѕРІР°РЅРёРµ */
+            left: 420px; /* РџРѕР»РѕР¶РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РѕС‚ РїСЂР°РІРѕРіРѕ РєСЂР°СЏ */
+            top: 20px; /* РџРѕР»РѕР¶РµРЅРёРµ РѕС‚ РІРµСЂС…РЅРµРіРѕ РєСЂР°СЏ */
+            width: 100px; /* РЁРёСЂРёРЅР° Р±Р»РѕРєР° */
+			height: 150px;
+            }
+            #three {
+            position: absolute; /* РђР±СЃРѕР»СЋС‚РЅРѕРµ РїРѕР·РёС†РёРѕРЅРёСЂРѕРІР°РЅРёРµ */
+            right: 300px; /* РџРѕР»РѕР¶РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РѕС‚ РїСЂР°РІРѕРіРѕ РєСЂР°СЏ */
+            top: 20px; /* РџРѕР»РѕР¶РµРЅРёРµ РѕС‚ РІРµСЂС…РЅРµРіРѕ РєСЂР°СЏ */
+            width: 100px; /* РЁРёСЂРёРЅР° Р±Р»РѕРєР° */
+			height: 150px;
+            }
+            #four {
+            position: absolute; /* РђР±СЃРѕР»СЋС‚РЅРѕРµ РїРѕР·РёС†РёРѕРЅРёСЂРѕРІР°РЅРёРµ */
+            right: 420px; /* РџРѕР»РѕР¶РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РѕС‚ РїСЂР°РІРѕРіРѕ РєСЂР°СЏ */
+            top: 20px; /* РџРѕР»РѕР¶РµРЅРёРµ РѕС‚ РІРµСЂС…РЅРµРіРѕ РєСЂР°СЏ */
+            width: 100px; /* РЁРёСЂРёРЅР° Р±Р»РѕРєР° */
+			height: 150px;
+            }
+            #five {
+            position: absolute; /* РђР±СЃРѕР»СЋС‚РЅРѕРµ РїРѕР·РёС†РёРѕРЅРёСЂРѕРІР°РЅРёРµ */
+            left: 30px; /* РџРѕР»РѕР¶РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РѕС‚ РїСЂР°РІРѕРіРѕ РєСЂР°СЏ */
+            top: 250px; /* РџРѕР»РѕР¶РµРЅРёРµ РѕС‚ РІРµСЂС…РЅРµРіРѕ РєСЂР°СЏ */
+            width: 100px; /* РЁРёСЂРёРЅР° Р±Р»РѕРєР° */
+			height: 150px;
+            }
+            #six {
+            position: absolute; /* РђР±СЃРѕР»СЋС‚РЅРѕРµ РїРѕР·РёС†РёРѕРЅРёСЂРѕРІР°РЅРёРµ */
+            left: 150px; /* РџРѕР»РѕР¶РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РѕС‚ РїСЂР°РІРѕРіРѕ РєСЂР°СЏ */
+            top: 250px; /* РџРѕР»РѕР¶РµРЅРёРµ РѕС‚ РІРµСЂС…РЅРµРіРѕ РєСЂР°СЏ */
+            width: 100px; /* РЁРёСЂРёРЅР° Р±Р»РѕРєР° */
+			height: 150px;
+            }
+            #seven {
+            position: absolute; /* РђР±СЃРѕР»СЋС‚РЅРѕРµ РїРѕР·РёС†РёРѕРЅРёСЂРѕРІР°РЅРёРµ */
+            right: 30px; /* РџРѕР»РѕР¶РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РѕС‚ РїСЂР°РІРѕРіРѕ РєСЂР°СЏ */
+            top: 250px; /* РџРѕР»РѕР¶РµРЅРёРµ РѕС‚ РІРµСЂС…РЅРµРіРѕ РєСЂР°СЏ */
+            width: 100px; /* РЁРёСЂРёРЅР° Р±Р»РѕРєР° */
+			height: 150px;
+            }
+            #eight {
+            position: absolute; /* РђР±СЃРѕР»СЋС‚РЅРѕРµ РїРѕР·РёС†РёРѕРЅРёСЂРѕРІР°РЅРёРµ */
+            right: 150px; /* РџРѕР»РѕР¶РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РѕС‚ РїСЂР°РІРѕРіРѕ РєСЂР°СЏ */
+            top: 250px; /* РџРѕР»РѕР¶РµРЅРёРµ РѕС‚ РІРµСЂС…РЅРµРіРѕ РєСЂР°СЏ */
+            width: 100px; /* РЁРёСЂРёРЅР° Р±Р»РѕРєР° */
+			height: 150px;
+            }
+            #nine {
+            position: absolute; /* РђР±СЃРѕР»СЋС‚РЅРѕРµ РїРѕР·РёС†РёРѕРЅРёСЂРѕРІР°РЅРёРµ */
+            left: 300px; /* РџРѕР»РѕР¶РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РѕС‚ РїСЂР°РІРѕРіРѕ РєСЂР°СЏ */
+            top: 500px; /* РџРѕР»РѕР¶РµРЅРёРµ РѕС‚ РІРµСЂС…РЅРµРіРѕ РєСЂР°СЏ */
+            width: 100px; /* РЁРёСЂРёРЅР° Р±Р»РѕРєР° */
+			height: 150px;
+            }
+            #ten {
+            position: absolute; /* РђР±СЃРѕР»СЋС‚РЅРѕРµ РїРѕР·РёС†РёРѕРЅРёСЂРѕРІР°РЅРёРµ */
+            left: 420px; /* РџРѕР»РѕР¶РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РѕС‚ РїСЂР°РІРѕРіРѕ РєСЂР°СЏ */
+            top: 500px; /* РџРѕР»РѕР¶РµРЅРёРµ РѕС‚ РІРµСЂС…РЅРµРіРѕ РєСЂР°СЏ */
+            width: 100px; /* РЁРёСЂРёРЅР° Р±Р»РѕРєР° */
+			height: 150px;
+            }
+            #eleven {
+            position: absolute; /* РђР±СЃРѕР»СЋС‚РЅРѕРµ РїРѕР·РёС†РёРѕРЅРёСЂРѕРІР°РЅРёРµ */
+            right: 300px; /* РџРѕР»РѕР¶РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РѕС‚ РїСЂР°РІРѕРіРѕ РєСЂР°СЏ */
+            top: 500px; /* РџРѕР»РѕР¶РµРЅРёРµ РѕС‚ РІРµСЂС…РЅРµРіРѕ РєСЂР°СЏ */
+            width: 100px; /* РЁРёСЂРёРЅР° Р±Р»РѕРєР° */
+			height: 150px;
+            }
+            #tvelve {
+            position: absolute; /* РђР±СЃРѕР»СЋС‚РЅРѕРµ РїРѕР·РёС†РёРѕРЅРёСЂРѕРІР°РЅРёРµ */
+            right: 420px; /* РџРѕР»РѕР¶РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РѕС‚ РїСЂР°РІРѕРіРѕ РєСЂР°СЏ */
+            top: 500px; /* РџРѕР»РѕР¶РµРЅРёРµ РѕС‚ РІРµСЂС…РЅРµРіРѕ РєСЂР°СЏ */
+            width: 100px; /* РЁРёСЂРёРЅР° Р±Р»РѕРєР° */
+			height: 150px;
+            }
+            #thirteen {
+            position: absolute; /* РђР±СЃРѕР»СЋС‚РЅРѕРµ РїРѕР·РёС†РёРѕРЅРёСЂРѕРІР°РЅРёРµ */
+            left: 376px; /* РџРѕР»РѕР¶РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РѕС‚ РїСЂР°РІРѕРіРѕ РєСЂР°СЏ */
+            top: 250px; /* РџРѕР»РѕР¶РµРЅРёРµ РѕС‚ РІРµСЂС…РЅРµРіРѕ РєСЂР°СЏ */
+            width: 100px; /* РЁРёСЂРёРЅР° Р±Р»РѕРєР° */
+			height: 150px;
+            }
+            #fourteen {
+            position: absolute; /* РђР±СЃРѕР»СЋС‚РЅРѕРµ РїРѕР·РёС†РёРѕРЅРёСЂРѕРІР°РЅРёРµ */
+            left: 496px; /* РџРѕР»РѕР¶РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РѕС‚ РїСЂР°РІРѕРіРѕ РєСЂР°СЏ */
+            top: 250px; /* РџРѕР»РѕР¶РµРЅРёРµ РѕС‚ РІРµСЂС…РЅРµРіРѕ РєСЂР°СЏ */
+            width: 100px; /* РЁРёСЂРёРЅР° Р±Р»РѕРєР° */
+			height: 150px;
+            }
+            #fifteen {
+            position: absolute; /* РђР±СЃРѕР»СЋС‚РЅРѕРµ РїРѕР·РёС†РёРѕРЅРёСЂРѕРІР°РЅРёРµ */
+            left: 616px; /* РџРѕР»РѕР¶РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РѕС‚ РїСЂР°РІРѕРіРѕ РєСЂР°СЏ */
+            top: 250px; /* РџРѕР»РѕР¶РµРЅРёРµ РѕС‚ РІРµСЂС…РЅРµРіРѕ РєСЂР°СЏ */
+            width: 100px; /* РЁРёСЂРёРЅР° Р±Р»РѕРєР° */
+			height: 150px;
+            }
+            #sixteen {
+            position: absolute; /* РђР±СЃРѕР»СЋС‚РЅРѕРµ РїРѕР·РёС†РёРѕРЅРёСЂРѕРІР°РЅРёРµ */
+            left: 736px; /* РџРѕР»РѕР¶РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РѕС‚ РїСЂР°РІРѕРіРѕ РєСЂР°СЏ */
+            top: 250px; /* РџРѕР»РѕР¶РµРЅРёРµ РѕС‚ РІРµСЂС…РЅРµРіРѕ РєСЂР°СЏ */
+            width: 100px; /* РЁРёСЂРёРЅР° Р±Р»РѕРєР° */
+			height: 150px;
+            }
+            #seventeen {
+            position: absolute; /* РђР±СЃРѕР»СЋС‚РЅРѕРµ РїРѕР·РёС†РёРѕРЅРёСЂРѕРІР°РЅРёРµ */
+            left: 856px; /* РџРѕР»РѕР¶РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РѕС‚ РїСЂР°РІРѕРіРѕ РєСЂР°СЏ */
+            top: 250px; /* РџРѕР»РѕР¶РµРЅРёРµ РѕС‚ РІРµСЂС…РЅРµРіРѕ РєСЂР°СЏ */
+            width: 100px; /* РЁРёСЂРёРЅР° Р±Р»РѕРєР° */
+			height: 150px; 
+            }
+			
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+		<p id="demo">hkjhkjh</p>
+        <img id='one' src="Card.jpg">
+		<img id='two' src="Card.jpg">
+		<img id='three' src="Card.jpg">
+		<img id='four' src="Card.jpg">
+		<img id='five' src="Card.jpg">
+		<img id='six' src="Card.jpg">
+		<img id='seven' src="Card.jpg">
+		<img id='eight' src="Card.jpg">
+		<img id='nine' src="Card.jpg">
+		<img id='ten' src="Card.jpg">
+		<img id='eleven' src="Card.jpg">
+		<img id='tvelve' src="Card.jpg">
+		<img id='thirteen' src="Card.jpg">
+		<img id='fourteen' src="Card.jpg">
+		<img id='fifteen' src="Card.jpg">
+		<img id='sixteen' src="Card.jpg">
+		<img id='seventeen' src="Card.jpg">
+        
+
+        <button type="button" onclick="displayDate()">ОТКРЫТЬ КАРТЫ</button>
+        
+    </body>
+    <script>
+        
+        var cards = [];
+        
+        function arrayRandElement() { 
+            var arr = ['1h', '2h', '3h', '4h', '5h', '6h', '7h', '8h', '9h', '10h', '11h', '12h', '13h', '1p', '2p', '3p', '4p', '5p', '6p', '7p', '8p', '9p', '10p', '11p', '12p', '13p', '1k', '2k', '3k', '4k', '5k', '6k', '7k', '8k', '9k', '10k', '11k', '12k', '13k', '1b', '2b', '3b', '4b', '5b', '6b', '7b', '8b', '9b', '10b', '11b', '12b', '13b'];
+
+            for (var i = 0; i < 17; i++) {
+                var rand = Math.floor(Math.random() * arr.length);
+                cards.push(arr[rand] + ".png");
+                arr.splice(rand, 1);
+            }
+           
+            return cards;
+        }
+        
+        function displayDate() {
+            cards = arrayRandElement();
+			document.getElementById("demo").innerHTML = cards[0];
+            document.getElementById("one").src = cards[0];
+            document.getElementById("two").src = cards[1];
+            document.getElementById("three").src = cards[2];
+            document.getElementById("four").src = cards[3];
+            document.getElementById("five").src = cards[4];
+            document.getElementById("six").src = cards[5];
+            document.getElementById("seven").src = cards[6];
+            document.getElementById("eight").src = cards[7];
+            document.getElementById("nine").src = cards[8];
+            document.getElementById("ten").src = cards[9];
+            document.getElementById("eleven").src = cards[10];
+            document.getElementById("tvelve").src = cards[11];
+            document.getElementById("thirteen").src = cards[12];
+            document.getElementById("fourteen").src = cards[13];
+            document.getElementById("fifteen").src = cards[14];
+            document.getElementById("sixteen").src = cards[15];
+            document.getElementById("seventeen").src = cards[16];
+            cards = [];
+            
+        }
+        
+    </script>
+</html>
